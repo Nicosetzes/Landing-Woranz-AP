@@ -1,1 +1,12 @@
 /* General styling */
+
+* {
+  box-sizing: border-box;
+  font-family: $font;
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  color: $blue;
+}

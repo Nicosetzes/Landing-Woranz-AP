@@ -1,0 +1,508 @@
+.main {
+  background-color: $gray;
+  padding: 146px 0 0 0; // top padding must be equal to navbar height //
+  .main__hero {
+    background-color: $yellow;
+    padding: 4.5rem 1.5rem;
+    .hero-introduction {
+      display: flex;
+      flex-wrap: wrap;
+      margin: 0 auto 2rem auto;
+      p {
+        text-align: center;
+        &:nth-child(1) {
+          font-size: 4rem;
+          font-weight: 700;
+          line-height: 4rem;
+          margin: 0 0 1rem 0;
+        }
+        &:nth-child(2) {
+          font-size: 2rem;
+          font-weight: 500;
+          line-height: 2.125rem;
+        }
+      }
+    }
+    .hero-content {
+      p {
+        font-size: 1.5rem;
+        font-weight: 700;
+        line-height: 1.75rem;
+        text-align: center;
+      }
+    }
+    .hero-form {
+      background-color: $white;
+      border-radius: 10px;
+      height: 426px;
+      margin: 0 auto;
+      width: 320px;
+      img {
+        width: 100%;
+      }
+    }
+  }
+  .main__first {
+    .first-content {
+      background-color: $orange;
+      padding: 0 1.5rem;
+      p {
+        color: $white;
+        font-size: 2.125rem;
+        font-weight: 700;
+        line-height: 2.375rem;
+        padding: 2.5rem 0;
+        text-align: center;
+      }
+    }
+  }
+  .main__second {
+    padding: 4.5rem 1.5rem;
+    .second-introduction {
+      margin: 0 auto 3rem auto;
+      p {
+        font-size: 3rem;
+        font-weight: 700;
+        line-height: 3.375rem;
+        text-align: center;
+      }
+    }
+    .second-content {
+      .second-content-container {
+        align-items: flex-start;
+        display: flex;
+        margin: 0 0 2.5rem 0;
+        width: 100%;
+        &:last-child {
+          margin: 0;
+        }
+        img {
+          margin: 0.375rem 0 0 0;
+        }
+        p {
+          font-size: 2.125rem;
+          font-weight: 700;
+          line-height: 2.125rem;
+          margin: 0 0 0 1rem;
+        }
+      }
+    }
+  }
+  .main__third {
+    padding: 0 0 3rem 0;
+    .third-introduction {
+      margin: 0 0 2rem 0;
+      p {
+        &:first-child {
+          font-size: 3rem;
+          font-weight: 700;
+          line-height: 3rem;
+          margin: 0 auto 1rem auto;
+          text-align: center;
+        }
+        &:last-child {
+          font-size: 2.125rem;
+          font-weight: 450;
+          line-height: 3.125rem;
+          text-align: center;
+        }
+      }
+    }
+    .third-content {
+      .third-content-container {
+        &.hero {
+          padding: 0 0 4rem 0;
+          position: relative;
+          .elipse {
+            bottom: 0;
+            position: absolute;
+            z-index: 0;
+          }
+        }
+        .cellphone {
+          position: relative;
+          z-index: 10;
+        }
+        button {
+          align-items: center;
+          background-color: $orange;
+          border: 0;
+          border-radius: 2rem;
+          color: $blue;
+          display: flex;
+          font-size: 2rem;
+          font-weight: 700;
+          justify-content: center;
+          line-height: 2.5rem;
+          margin: 0 auto;
+          padding: 1.5rem 3.5rem;
+          position: relative;
+          z-index: 10;
+        }
+        .container__block {
+          display: flex;
+          flex-wrap: wrap;
+          padding: 2rem 1.25rem;
+          .block-image {
+            background-color: $yellow;
+            border: 0;
+            border-radius: 0.75rem;
+            display: flex;
+            height: 70px;
+            padding: 1rem;
+            width: fit-content;
+            img {
+              height: 100%;
+              width: 100%;
+            }
+          }
+          .block-text {
+            flex-grow: 1;
+            flex-basis: 200px;
+            margin: 0 0 0 2rem;
+            p {
+              &:first-child {
+                font-size: 1.75rem;
+                font-weight: 700;
+                line-height: 2.125rem;
+              }
+              &:last-child {
+                font-size: 1.5rem;
+                font-weight: 450;
+                line-height: 1.75rem;
+                margin: 0.5rem 0 0 0;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .main__fourth {
+    background-color: $blue;
+    padding: 4rem 0.75rem;
+    .fourth-introduction {
+      p {
+        color: $beige;
+        font-size: 3rem;
+        font-weight: 700;
+        line-height: 3rem;
+        text-align: center;
+      }
+    }
+    .fourth-content {
+      display: flex;
+      flex-wrap: wrap;
+      .fourth-content-container {
+        background-color: $yellow;
+        border: 0;
+        border-radius: 2.125rem;
+        margin: 1.25rem auto;
+        padding: 1.5rem;
+        &:first-child {
+          margin: 2.5rem auto 1.25rem auto;
+        }
+        p {
+          color: $blue;
+          line-height: 1.5rem;
+          font-weight: 700;
+          &:nth-child(1) {
+            font-size: 3rem;
+            line-height: 3rem;
+          }
+          &:nth-child(2) {
+            font-size: 1.5rem;
+            margin: 0.5rem 0;
+          }
+          &:nth-child(3) {
+            font-size: 1.25rem;
+            font-weight: 450;
+          }
+          a {
+            color: $orange;
+            text-decoration: none;
+          }
+        }
+      }
+      button {
+        align-items: center;
+        background-color: $orange;
+        border: 0;
+        border-radius: 2rem;
+        color: $blue;
+        display: flex;
+        font-size: 2rem;
+        font-weight: 700;
+        justify-content: center;
+        line-height: 2.5rem;
+        margin: 2.5rem auto 2.5rem auto;
+        padding: 1.25rem 3.5rem;
+      }
+    }
+  }
+  .main__fifth {
+    background-color: $beige;
+    padding: 4rem 0.75rem;
+    .fifth-introduction {
+      margin: 0 0 2rem 0;
+      p {
+        text-align: center;
+        &:first-child {
+          font-size: 3.375rem;
+          font-weight: 700;
+          line-height: 55px;
+        }
+        &:last-child {
+          font-size: 2rem;
+          font-weight: 500;
+          line-height: 50px;
+        }
+      }
+    }
+    .fifth-content {
+      margin: 2rem auto 0 auto;
+      #accordion {
+        .accordion-item {
+          border: 0;
+          border-width: 0;
+          color: $blue;
+          margin: 0.5rem auto;
+          .accordion-header {
+            .accordion-button {
+              background-color: $beige;
+              border-bottom: $orange 1px solid;
+              color: $blue;
+              font-size: 1.75rem;
+              font-weight: 700;
+              line-height: 1.875rem;
+              text-align: left;
+              &::after {
+                background-image: url("./../media/plus.svg");
+              }
+            }
+          }
+          .accordion-collapse {
+            .accordion-body {
+              background-color: $beige;
+              border: 0;
+              font-size: 1.5rem;
+              font-weight: 450;
+              line-height: 2rem;
+              padding: 2rem 1.25rem 2.5rem 1.25rem;
+              text-align: left;
+            }
+          }
+        }
+      }
+    }
+  }
+  .main__sixth {
+    background-color: $orange;
+    padding: 4rem 0.75rem;
+    .sixth-introduction {
+      p {
+        text-align: center;
+        &:first-child {
+          color: $white;
+          font-size: 39px;
+          font-weight: 700;
+          line-height: 39px;
+        }
+        &:last-child {
+          color: $blue;
+          font-size: 2rem;
+          font-weight: 450;
+          line-height: 34px;
+          margin: 2rem 0;
+        }
+      }
+    }
+    .sixth-content {
+      button {
+        align-items: center;
+        background-color: $blue;
+        border: 0;
+        border-radius: 2rem;
+        color: $yellow;
+        display: flex;
+        font-size: 2rem;
+        font-weight: 700;
+        justify-content: center;
+        line-height: 2.5rem;
+        margin: 2.5rem auto 2.5rem auto;
+        padding: 1.25rem 3.5rem;
+      }
+    }
+  }
+  .main__seventh {
+    background-color: $yellow;
+    padding: 4rem 0.75rem;
+    .seventh-content {
+      .seventh-content-container {
+        &:first-child {
+          p {
+            text-align: center;
+            &:first-child {
+              font-size: 3rem;
+              font-weight: 700;
+              line-height: 3rem;
+            }
+            &:last-child {
+              font-size: 2.125rem;
+              font-weight: 450;
+              line-height: 2.125rem;
+              margin: 3rem auto;
+            }
+          }
+        }
+        &.block {
+          align-items: center;
+          background-color: $blue;
+          border: 0;
+          border-radius: 2.125rem;
+          display: flex;
+          height: 200px;
+          margin: 2rem auto;
+          padding: 2rem;
+          p {
+            color: $yellow;
+            font-size: 1.75rem;
+            font-weight: 700;
+            line-height: 2.375rem;
+            margin: 0;
+            text-align: center;
+            text-transform: uppercase;
+          }
+        }
+        &:last-child {
+          margin: 4rem auto 3rem auto;
+          p {
+            font-size: 2.125rem;
+            font-weight: 700;
+            line-height: 2.125rem;
+            text-align: center;
+          }
+        }
+      }
+      .seventh-content-image {
+        height: 500px;
+        position: relative;
+        img {
+          bottom: 25px;
+          position: absolute;
+        }
+      }
+      .seventh-content-form {
+        background-color: $white;
+        border-radius: 10px;
+        height: 426px;
+        margin: 0 auto;
+        width: 350px;
+        img {
+          width: 100%;
+        }
+      }
+    }
+  }
+  .main__eighth {
+    background-color: $beige;
+    padding: 4rem 0.75rem;
+    .eighth-introduction {
+      display: flex;
+      flex-wrap: wrap;
+      padding: 2.5rem 1rem;
+      .eighth-introduction-banner {
+        align-items: center;
+        display: flex;
+        height: 100px;
+        justify-content: center;
+        margin: 0 auto;
+        padding: 1rem 0 0 0;
+        width: 350px;
+        img {
+        }
+      }
+      .eighth-introduction-paragraph {
+        p {
+          font-size: 1.5rem;
+          font-weight: 500;
+          line-height: 30px;
+          margin: 1.5rem 0;
+        }
+      }
+      .eighth-introduction-social {
+        display: flex;
+        width: 100%;
+        .social__container {
+          align-items: center;
+          background-color: $orange;
+          border: 0;
+          border-radius: 0.5rem;
+          display: flex;
+          height: 65px;
+          justify-content: center;
+          margin: 0 0.5rem;
+          width: 65px;
+          &:first-child {
+            margin: 0 0.5rem 0 0;
+          }
+        }
+      }
+    }
+    .eighth-content {
+      align-items: center;
+      display: flex;
+      flex-wrap: wrap;
+      margin: 1rem auto;
+      .eighth-content-container {
+        align-items: center;
+        border-bottom: $blue 1px solid;
+        color: $blue;
+        display: flex;
+        font-size: 1.5rem;
+        font-weight: 500;
+        line-height: 30px;
+        padding: 1.5rem 0;
+        width: 100%;
+      }
+    }
+  }
+  .main__nineth {
+    background-color: $blue;
+    padding: 3rem 1.25rem 4rem 1.25rem;
+    .nineth-content {
+      display: flex;
+      flex-wrap: wrap;
+      .nineth-content-container {
+        margin: 1rem auto;
+        width: 100%;
+        p {
+          color: $beige;
+          font-size: 1rem;
+          font-weight: 450;
+          line-height: 1.25rem;
+          margin: 0.25rem 0;
+          text-align: center;
+          &:last-child {
+            font-weight: 700;
+          }
+        }
+      }
+      .nineth-content-logo {
+        margin: 2rem auto 3rem auto;
+      }
+      .nineth-content-legal {
+        margin: 0 auto 2rem auto;
+        p {
+          color: $beige;
+          font-size: 0.75rem;
+          font-weight: 450;
+          line-height: 15px;
+        }
+      }
+      .nineth-content-qr {
+        margin: 0 auto;
+      }
+    }
+  }
+}
