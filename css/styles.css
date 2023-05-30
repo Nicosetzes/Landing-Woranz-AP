@@ -13,7 +13,7 @@ p {
 
 .header nav {
   background-color: #323d4a;
-  padding: 2.5rem 1rem;
+  padding: 2.5rem 0.5rem;
 }
 .header nav .container-fluid .navbar-toggler {
   border: 0;
@@ -38,6 +38,11 @@ p {
   background-color: #f3d52a;
   padding: 4.5rem 1.5rem;
 }
+@media only screen and (max-width: 400px) {
+  .main .main__hero {
+    padding: 4.5rem 0.5rem;
+  }
+}
 .main .main__hero .hero-introduction {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -55,6 +60,11 @@ p {
   line-height: 4rem;
   margin: 0 0 1rem 0;
 }
+@media only screen and (max-width: 400px) {
+  .main .main__hero .hero-introduction p:nth-child(1) {
+    width: 100%;
+  }
+}
 .main .main__hero .hero-introduction p:nth-child(2) {
   font-size: 2rem;
   font-weight: 500;
@@ -65,6 +75,11 @@ p {
   font-weight: 700;
   line-height: 1.75rem;
   text-align: center;
+}
+@media only screen and (max-width: 400px) {
+  .main .main__hero .hero-content img {
+    width: 100%;
+  }
 }
 .main .main__hero .hero-form {
   background-color: #fff;
@@ -90,6 +105,11 @@ p {
 }
 .main .main__second {
   padding: 4.5rem 1.5rem;
+}
+@media only screen and (max-width: 400px) {
+  .main .main__second {
+    padding: 4.5rem 0.5rem;
+  }
 }
 .main .main__second .second-introduction {
   margin: 0 auto 3rem auto;
@@ -122,11 +142,17 @@ p {
   line-height: 2.125rem;
   margin: 0 0 0 1rem;
 }
+@media only screen and (max-width: 400px) {
+  .main .main__second .second-content .second-content-image {
+    width: 100%;
+  }
+}
 .main .main__third {
   padding: 0 0 3rem 0;
 }
 .main .main__third .third-introduction {
   margin: 0 0 2rem 0;
+  padding: 0 0.5rem;
 }
 .main .main__third .third-introduction p:first-child {
   font-size: 3rem;
@@ -143,16 +169,30 @@ p {
 }
 .main .main__third .third-content .third-content-container.hero {
   padding: 0 0 4rem 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   position: relative;
 }
 .main .main__third .third-content .third-content-container.hero .elipse {
   bottom: 0;
   position: absolute;
+  width: 100%;
   z-index: 0;
 }
 .main .main__third .third-content .third-content-container .cellphone {
   position: relative;
   z-index: 10;
+}
+@media only screen and (max-width: 400px) {
+  .main .main__third .third-content .third-content-container .cellphone {
+    width: 100%;
+  }
 }
 .main .main__third .third-content .third-content-container button {
   -webkit-box-align: center;
@@ -222,7 +262,12 @@ p {
 }
 .main .main__fourth {
   background-color: #323d4a;
-  padding: 4rem 0.75rem;
+  padding: 4rem 1.5rem;
+}
+@media only screen and (max-width: 400px) {
+  .main .main__fourth {
+    padding: 4.5rem 0.5rem;
+  }
 }
 .main .main__fourth .fourth-introduction p {
   color: #f9f4e1;
@@ -291,7 +336,12 @@ p {
 }
 .main .main__fifth {
   background-color: #f9f4e1;
-  padding: 4rem 0.75rem;
+  padding: 4rem 1.5rem;
+}
+@media only screen and (max-width: 400px) {
+  .main .main__fifth {
+    padding: 4.5rem 0.5rem;
+  }
 }
 .main .main__fifth .fifth-introduction {
   margin: 0 0 2rem 0;
@@ -304,10 +354,20 @@ p {
   font-weight: 700;
   line-height: 55px;
 }
+@media only screen and (max-width: 400px) {
+  .main .main__fifth .fifth-introduction p:first-child {
+    font-size: 3rem;
+  }
+}
 .main .main__fifth .fifth-introduction p:last-child {
   font-size: 2rem;
   font-weight: 500;
   line-height: 50px;
+}
+@media only screen and (max-width: 400px) {
+  .main .main__fifth .fifth-introduction p:last-child {
+    font-size: 1.75rem;
+  }
 }
 .main .main__fifth .fifth-content {
   margin: 2rem auto 0 auto;
@@ -327,6 +387,11 @@ p {
   line-height: 1.875rem;
   text-align: left;
 }
+@media only screen and (max-width: 400px) {
+  .main .main__fifth .fifth-content #accordion .accordion-item .accordion-header .accordion-button {
+    font-size: 1.5rem;
+  }
+}
 .main .main__fifth .fifth-content #accordion .accordion-item .accordion-header .accordion-button::after {
   background-image: url("./../media/plus.svg");
 }
@@ -338,6 +403,11 @@ p {
   line-height: 2rem;
   padding: 2rem 1.25rem 2.5rem 1.25rem;
   text-align: left;
+}
+@media only screen and (max-width: 400px) {
+  .main .main__fifth .fifth-content #accordion .accordion-item .accordion-collapse .accordion-body {
+    font-size: 1.25rem;
+  }
 }
 .main .main__sixth {
   background-color: #ff8542;
@@ -378,6 +448,11 @@ p {
   line-height: 2.5rem;
   margin: 2.5rem auto 2.5rem auto;
   padding: 1.25rem 3.5rem;
+}
+@media only screen and (max-width: 400px) {
+  .main .main__sixth .sixth-content img {
+    width: 100%;
+  }
 }
 .main .main__seventh {
   background-color: #f3d52a;
@@ -437,12 +512,24 @@ p {
   bottom: 25px;
   position: absolute;
 }
+@media only screen and (max-width: 400px) {
+  .main .main__seventh .seventh-content .seventh-content-image img {
+    width: 100%;
+  }
+}
 .main .main__seventh .seventh-content .seventh-content-form {
   background-color: #fff;
   border-radius: 10px;
-  height: 426px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   margin: 0 auto;
-  width: 350px;
+  width: 100%;
+}
+@media only screen and (max-width: 400px) {
+  .main .main__seventh .seventh-content .seventh-content-form {
+    width: 100%;
+  }
 }
 .main .main__seventh .seventh-content .seventh-content-form img {
   width: 100%;
@@ -473,6 +560,16 @@ p {
   margin: 0 auto;
   padding: 1rem 0 0 0;
   width: 350px;
+}
+@media only screen and (max-width: 400px) {
+  .main .main__eighth .eighth-introduction .eighth-introduction-banner {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .main .main__eighth .eighth-introduction .eighth-introduction-banner img {
+    width: 100%;
+  }
 }
 .main .main__eighth .eighth-introduction .eighth-introduction-paragraph p {
   font-size: 1.5rem;
@@ -560,6 +657,11 @@ p {
 }
 .main .main__nineth .nineth-content .nineth-content-logo {
   margin: 2rem auto 3rem auto;
+}
+@media only screen and (max-width: 400px) {
+  .main .main__nineth .nineth-content .nineth-content-logo {
+    width: 100%;
+  }
 }
 .main .main__nineth .nineth-content .nineth-content-legal {
   margin: 0 auto 2rem auto;
