@@ -2,6 +2,9 @@
   nav {
     background-color: $blue;
     padding: 2.5rem 0.5rem;
+    @media only screen and (min-width: 992px) {
+      padding: 2.5rem 1.5rem;
+    }
     .container-fluid {
       .navbar-toggler {
         border: 0;
@@ -10,13 +13,27 @@
         }
       }
       .navbar-collapse {
+        @media only screen and (min-width: 992px) {
+          justify-content: flex-end;
+        }
         .navbar-nav {
           align-items: flex-end;
+          @media only screen and (min-width: 992px) {
+            align-items: center;
+          }
           .nav-link {
             color: $beige;
-            // &:last-child {
-            //   background-color: $yellow;
-            // }
+            @media only screen and (min-width: 992px) {
+              font-size: 22px;
+              font-weight: 700;
+              margin: 0 0.5rem;
+              &:last-child {
+                background-color: $yellow;
+                border-radius: 1.5rem;
+                color: $blue;
+                padding: 1rem 1.75rem;
+              }
+            }
           }
         }
       }
