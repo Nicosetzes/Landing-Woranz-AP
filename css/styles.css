@@ -228,11 +228,11 @@ p {
   }
 }
 .main .main__second .second-content > div .second-content-container:last-child {
-  margin: 0 0 0 4rem;
+  margin: 0;
 }
-@media only screen and (max-width: 400px) {
+@media only screen and (min-width: 992px) {
   .main .main__second .second-content > div .second-content-container:last-child {
-    margin: 0;
+    margin: 0 0 0 4rem;
   }
 }
 .main .main__second .second-content > div .second-content-container img {
@@ -354,6 +354,7 @@ p {
   }
 }
 .main .main__third .third-content .third-content-container .cellphone {
+  max-width: 375px;
   position: relative;
   z-index: 10;
 }
@@ -902,11 +903,11 @@ p {
 }
 .main .main__seventh .seventh-content.end {
   margin: 3rem auto 1rem auto;
-  width: 600px;
+  width: 100%;
 }
-@media only screen and (max-width: 400px) {
+@media only screen and (min-width: 992px) {
   .main .main__seventh .seventh-content.end {
-    width: 100%;
+    width: 600px;
   }
 }
 .main .main__seventh .seventh-content.end p {
