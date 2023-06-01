@@ -8,6 +8,9 @@
     .container-fluid {
       .navbar-toggler {
         border: 0;
+        &:focus {
+          box-shadow: none;
+        }
         .navbar-toggler-icon {
           background-image: url("./../media/hamburger.svg");
         }
@@ -23,6 +26,18 @@
           }
           .nav-link {
             color: $beige;
+            font-size: 1.25rem;
+            font-weight: 700;
+            margin: 0.25rem 0;
+            &:last-child {
+              align-items: center;
+              background-color: $yellow;
+              border-radius: 1.5rem;
+              color: $blue;
+              display: flex;
+              margin: 0.5rem 0 0 0;
+              padding: 0.25rem 1rem 0.25rem 1rem;
+            }
             @media only screen and (min-width: 992px) {
               font-size: 22px;
               font-weight: 700;
