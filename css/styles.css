@@ -5,20 +5,163 @@
   font-family: "Circular Std", sans-serif;
   margin: 0;
   padding: 0;
+  scroll-behavior: smooth;
 }
 
 p {
   color: #323d4a;
 }
 
+.form {
+  background-color: #fff;
+  border-radius: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 0 auto;
+  max-width: 500px;
+  padding: 2rem 1.5rem;
+  scroll-margin-top: 200px;
+}
+@media only screen and (max-width: 400px) {
+  .form {
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .form {
+    max-width: 450px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .form {
+    margin: 0;
+  }
+}
+.form .form__header {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.form .form__header p {
+  text-align: center;
+}
+.form .form__header p:first-child {
+  font-size: 1.75rem;
+}
+@media only screen and (max-width: 400px) {
+  .form .form__header p:first-child {
+    max-width: 270px;
+  }
+}
+.form .form__header p:last-child {
+  font-size: 1.25rem;
+}
+.form .form__body {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+}
+@media only screen and (min-width: 768px) {
+  .form .form__body {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+.form .form__body .body-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 0.5rem 0;
+  width: 100%;
+}
+@media only screen and (min-width: 768px) {
+  .form .form__body .body-row:nth-child(3) label {
+    max-width: 200px;
+  }
+}
+.form .form__body .body-row:nth-child(3) input::-webkit-outer-spin-button, .form .form__body .body-row:nth-child(3) input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+@media only screen and (min-width: 768px) {
+  .form .form__body .body-row:nth-child(3) input {
+    max-width: 200px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .form .form__body .body-row.small {
+    -ms-flex-preferred-size: 175px;
+        flex-basis: 175px;
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+    max-width: 200px;
+  }
+}
+.form .form__body .body-row label {
+  font-size: 0.875rem;
+}
+.form .form__body .body-row select {
+  border: 0;
+  height: 2.5rem;
+  outline: #a9aaaf 1px solid;
+}
+.form .form__body .body-row select:focus {
+  outline: none;
+}
+.form .form__body .body-row input {
+  font-size: 1rem;
+  height: 2.5rem;
+  outline: #a9aaaf 1px solid;
+}
+.form .form__body button {
+  background-color: #f3d52a;
+  border: 0;
+  border-radius: 0.25rem;
+  color: #323d4a;
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin: 1rem auto 0 auto;
+  padding: 0.5rem 2.75rem;
+}
+
 .header nav {
   background-color: #323d4a;
-  padding: 2.5rem 0.5rem;
+  padding: 2rem 0.5rem;
 }
 @media only screen and (min-width: 992px) {
   .header nav {
     padding: 2.5rem 1.5rem;
   }
+}
+.header nav .container-fluid img {
+  width: 210px;
 }
 .header nav .container-fluid .navbar-toggler {
   border: 0;
@@ -78,13 +221,14 @@ p {
     background-color: #f3d52a;
     border-radius: 1.5rem;
     color: #323d4a;
+    margin: 0 0.5rem;
     padding: 1rem 1.75rem;
   }
 }
 
 .main {
   background-color: #f5f5f5;
-  padding: 146px 0 0 0;
+  padding: 123px 0 0 0;
 }
 .main .main__hero {
   background-color: #f3d52a;
@@ -100,7 +244,7 @@ p {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    padding: 5.5rem 1.5rem;
+    padding: 5.5rem 1.25rem;
   }
 }
 @media only screen and (min-width: 1200px) {
@@ -202,30 +346,9 @@ p {
 @media only screen and (min-width: 992px) {
   .main .main__hero .hero-content > div img {
     position: absolute;
-    left: 250px;
+    left: 230px;
     top: 200px;
   }
-}
-.main .main__hero .hero-form {
-  background-color: #fff;
-  border-radius: 10px;
-  height: 426px;
-  margin: 0 auto;
-  width: 320px;
-}
-@media only screen and (min-width: 992px) {
-  .main .main__hero .hero-form {
-    margin: 0 0 0 auto;
-    width: 375px;
-  }
-}
-@media only screen and (min-width: 1200px) {
-  .main .main__hero .hero-form {
-    margin: 0;
-  }
-}
-.main .main__hero .hero-form img {
-  width: 100%;
 }
 .main .main__first .first-content {
   background-color: #ff8542;
@@ -466,7 +589,7 @@ p {
     width: 280px;
   }
 }
-.main .main__third .third-content .third-content-container.hero button {
+.main .main__third .third-content .third-content-container.hero .button-main {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -486,10 +609,11 @@ p {
   margin: 0 auto;
   padding: 1.25rem 3rem;
   position: relative;
+  text-decoration: none;
   z-index: 10;
 }
 @media only screen and (min-width: 992px) {
-  .main .main__third .third-content .third-content-container.hero button {
+  .main .main__third .third-content .third-content-container.hero .button-main {
     font-size: 1.5rem;
     padding: 1.25rem 3rem;
     width: 280px;
@@ -686,7 +810,7 @@ p {
   color: #ff8542;
   text-decoration: none;
 }
-.main .main__fourth .fourth-content_sm button {
+.main .main__fourth .fourth-content_sm .button-main {
   display: none;
 }
 .main .main__fourth .fourth-content_lg {
@@ -756,7 +880,7 @@ p {
   font-size: 1rem;
   font-weight: 450;
 }
-.main .main__fourth button {
+.main .main__fourth .button-main {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -775,10 +899,13 @@ p {
   line-height: 2.5rem;
   margin: 2.5rem auto 0 auto;
   padding: 1rem 3rem;
+  text-decoration: none;
+  width: 300px;
 }
 .main .main__fifth {
   background-color: #f9f4e1;
   padding: 4rem 1.5rem;
+  scroll-margin-top: 200px;
 }
 @media only screen and (max-width: 400px) {
   .main .main__fifth {
@@ -873,6 +1000,7 @@ p {
 .main .main__sixth {
   background-color: #ff8542;
   padding: 4rem 0.75rem;
+  scroll-margin-top: 200px;
 }
 .main .main__sixth .sixth-introduction p {
   text-align: center;

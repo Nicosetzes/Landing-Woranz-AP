@@ -1,6 +1,6 @@
 .main {
   background-color: $gray;
-  padding: 146px 0 0 0; // top padding must be equal to navbar height //
+  padding: 123px 0 0 0; // top padding must be equal to navbar height //
   .main__hero {
     background-color: $yellow;
     padding: 4.5rem 1.5rem;
@@ -9,7 +9,7 @@
     }
     @media only screen and (min-width: 992px) {
       display: flex;
-      padding: 5.5rem 1.5rem;
+      padding: 5.5rem 1.25rem;
     }
     @media only screen and (min-width: 1200px) {
       justify-content: space-evenly;
@@ -77,27 +77,10 @@
           }
           @media only screen and (min-width: 992px) {
             position: absolute;
-            left: 250px;
+            left: 230px;
             top: 200px;
           }
         }
-      }
-    }
-    .hero-form {
-      background-color: $white;
-      border-radius: 10px;
-      height: 426px;
-      margin: 0 auto;
-      width: 320px;
-      @media only screen and (min-width: 992px) {
-        margin: 0 0 0 auto;
-        width: 375px;
-      }
-      @media only screen and (min-width: 1200px) {
-        margin: 0;
-      }
-      img {
-        width: 100%;
       }
     }
   }
@@ -259,7 +242,7 @@
             padding: 0 0 1rem 0;
             width: 280px;
           }
-          button {
+          .button-main {
             align-items: center;
             background-color: $orange;
             border: 0;
@@ -273,6 +256,7 @@
             margin: 0 auto;
             padding: 1.25rem 3rem;
             position: relative;
+            text-decoration: none;
             z-index: 10;
             @media only screen and (min-width: 992px) {
               font-size: 1.5rem;
@@ -438,7 +422,7 @@
           }
         }
       }
-      button {
+      .button-main {
         display: none;
       }
     }
@@ -489,7 +473,7 @@
         }
       }
     }
-    button {
+    .button-main {
       align-items: center;
       background-color: $orange;
       border: 0;
@@ -502,11 +486,14 @@
       line-height: 2.5rem;
       margin: 2.5rem auto 0 auto;
       padding: 1rem 3rem;
+      text-decoration: none;
+      width: 300px;
     }
   }
   .main__fifth {
     background-color: $beige;
     padding: 4rem 1.5rem;
+    scroll-margin-top: 200px; // Altura de la navbar + un extra para que el destino esté centrado //
     @media only screen and (max-width: 400px) {
       padding: 4.5rem 0.5rem;
     }
@@ -590,6 +577,7 @@
   .main__sixth {
     background-color: $orange;
     padding: 4rem 0.75rem;
+    scroll-margin-top: 200px; // Altura de la navbar + un extra para que el destino esté centrado //
     .sixth-introduction {
       p {
         text-align: center;

@@ -1,0 +1,104 @@
+.form {
+  background-color: $white;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  max-width: 500px;
+  padding: 2rem 1.5rem;
+  scroll-margin-top: 200px; // Altura de la navbar + un extra para que el destino esté centrado en mobile //
+  @media only screen and (max-width: 400px) {
+    width: 100%;
+  }
+  @media only screen and (min-width: 992px) {
+    max-width: 450px;
+    // scroll-margin-top: 123px; // Altura de la navbar + extra //
+  }
+  @media only screen and (min-width: 1200px) {
+    margin: 0;
+  }
+  .form__header {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    p {
+      text-align: center;
+      &:first-child {
+        font-size: 1.75rem;
+        @media only screen and (max-width: 400px) {
+          max-width: 270px;
+        }
+      }
+      &:last-child {
+        font-size: 1.25rem;
+      }
+    }
+  }
+  .form__body {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    @media only screen and (min-width: 768px) {
+      justify-content: space-between;
+    }
+    .body-row {
+      display: flex;
+      flex-direction: column;
+      margin: 0.5rem 0;
+      width: 100%;
+      &:nth-child(3) {
+        label {
+          @media only screen and (min-width: 768px) {
+            max-width: 200px;
+          }
+        }
+        input {
+          // Hide arrows from input type = "number"
+          &::-webkit-outer-spin-button,
+          &::-webkit-inner-spin-button {
+            -webkit-appearance: none;
+            margin: 0;
+          }
+          @media only screen and (min-width: 768px) {
+            max-width: 200px;
+          }
+        }
+      }
+      &.small {
+        @media only screen and (min-width: 768px) {
+          flex-basis: 175px;
+          flex-grow: 1;
+          max-width: 200px;
+        }
+      }
+      label {
+        font-size: 0.875rem;
+      }
+      select {
+        border: 0;
+        &:focus {
+          outline: none;
+        }
+        height: 2.5rem;
+        outline: #a9aaaf 1px solid;
+      }
+      input {
+        font-size: 1rem;
+        height: 2.5rem;
+        outline: #a9aaaf 1px solid;
+      }
+    }
+    button {
+      background-color: $yellow;
+      border: 0;
+      border-radius: 0.25rem;
+      color: $blue;
+      font-size: 1.25rem;
+      font-weight: 700;
+      margin: 1rem auto 0 auto;
+      padding: 0.5rem 2.75rem;
+    }
+  }
+}

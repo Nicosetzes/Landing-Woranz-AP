@@ -15,8 +15,11 @@
       integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
       crossorigin="anonymous"
     ></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <link rel="stylesheet" type="text/css" href="css/styles.css" />
-    <title>Document</title>
+    <script src="./js/api.js" defer></script>
+    <script src="./js/form.js" defer></script>
+    <title>Woranz</title>
   </head>
   <body>
     <div class="header">
@@ -38,7 +41,7 @@
             <div class="navbar-nav">
               <a class="nav-link" href="#main__fifth">Preguntas frecuentes</a>
               <a class="nav-link" href="#main__sixth">Productores</a>
-              <a class="nav-link" href="#hero-form">Cotizar seguro</a>
+              <a class="nav-link" href="#form-top">Cotizar seguro</a>
             </div>
           </div>
         </div>
@@ -54,9 +57,35 @@
             <img src="./media/helmet.png" alt="" />
           </div>
         </div>
-        <div id="hero-form" class="hero-form">
-          <img src="./media/form_lg.png" alt="" />
-        </div>
+        <form id="form-top" class="form">
+          <div class="form__header">
+            <p>¡Bienvenido a Woranz live!</p>
+            <p>Voy a ayudarte a obtener el mejor precio en minutos</p>
+          </div>
+          <div class="form__body">
+            <div class="body-row">
+              <label> Profesión </label>
+              <select id="top-select-job" class="select-job"></select>
+            </div>
+            <div class="body-row">
+              <label> Provincia </label>
+              <select id="top-select-location" class="select-location"></select>
+            </div>
+            <div class="body-row">
+              <label> Cantidad de asegurados </label>
+              <input class="amount" type="number" />
+            </div>
+            <div class="body-row small">
+              <label> Inicio de la cobertura </label>
+              <input class="date-start" type="date" />
+            </div>
+            <div class="body-row small">
+              <label> Fin de la cobertura </label>
+              <input class="date-end" type="date" />
+            </div>
+            <button type="submit">Continuar</button>
+          </div>
+        </form>
       </div>
       <div class="main__first">
         <div class="first-content">
@@ -97,7 +126,7 @@
         <div class="third-content">
           <div class="third-content-container hero">
             <img class="cellphone" src="./media/cellphone_lg.png" alt="" />
-            <button>Cotizar seguro</button>
+            <a class="button-main" href="#form-top">Cotizar seguro</a>
             <img class="elipse" src="./media/elipse.png" alt="" />
             <img class="circle" src="./media/circle.png" alt="" />
           </div>
@@ -162,7 +191,7 @@
             <p>01.</p>
             <p>Completá el formulario</p>
             <p>
-              <a href="#hero-form">Woranz live</a> | Indicá los datos básicos y
+              <a href="#form-top">Woranz live</a> | Indicá los datos básicos y
               el tiempo que querés la póliza.
             </p>
           </div>
@@ -189,7 +218,7 @@
             <p>Te enviaremos la póliza junto con un link de pago</p>
             <p>Te enviaremos la póliza junto con un link de pago.</p>
           </div>
-          <button>Cotizar seguro</button>
+          <a class="button-main" href="#form-bottom">Cotizar seguro</a>
         </div>
         <div class="fourth-content_lg">
           <!-- Fourth content small, for tablet and desktop -->
@@ -198,8 +227,8 @@
               <p>01.</p>
               <p>Completá el formulario</p>
               <p>
-                <a href="#hero-form">Woranz live</a> | Indicá los datos básicos
-                y el tiempo que querés la póliza.
+                <a href="#form-top">Woranz live</a> | Indicá los datos básicos y
+                el tiempo que querés la póliza.
               </p>
             </div>
             <div class="fourth-content-container">
@@ -230,7 +259,7 @@
             </div>
           </div>
         </div>
-        <button>Cotizar seguro</button>
+        <a class="button-main" href="#form-bottom">Cotizar seguro</a>
       </div>
       <div id="main__fifth" class="main__fifth">
         <div class="fifth-introduction">
@@ -431,9 +460,38 @@
               </div>
             </div>
             <div class="seventh__column">
-              <div class="seventh-content-form">
-                <img src="./media/form_lg.png" alt="" />
-              </div>
+              <form id="form-bottom" class="form">
+                <div class="form__header">
+                  <p>¡Bienvenido a Woranz live!</p>
+                  <p>Voy a ayudarte a obtener el mejor precio en minutos</p>
+                </div>
+                <div class="form__body">
+                  <div class="body-row">
+                    <label> Profesión </label>
+                    <select id="bottom-select-job" class="select-job"></select>
+                  </div>
+                  <div class="body-row">
+                    <label> Provincia </label>
+                    <select
+                      id="bottom-select-location"
+                      class="select-location"
+                    ></select>
+                  </div>
+                  <div class="body-row">
+                    <label> Cantidad de asegurados </label>
+                    <input class="amount" type="number" />
+                  </div>
+                  <div class="body-row small">
+                    <label> Inicio de la cobertura </label>
+                    <input class="date-start" type="date" />
+                  </div>
+                  <div class="body-row small">
+                    <label> Fin de la cobertura </label>
+                    <input class="date-end" type="date" />
+                  </div>
+                  <button type="submit">Continuar</button>
+                </div>
+              </form>
             </div>
           </div>
           <div class="seventh-content end">
@@ -470,7 +528,9 @@
             Darme de alta como productor
           </div>
           <div class="eighth-content-container">La empresa</div>
-          <div class="eighth-content-container">Woranz Live</div>
+          <a href="#form-bottom" class="eighth-content-container"
+            >Woranz Live</a
+          >
           <div class="eighth-content-container">
             Garantía de Alquiler Woranz
           </div>

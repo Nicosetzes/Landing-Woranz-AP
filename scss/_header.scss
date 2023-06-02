@@ -1,11 +1,14 @@
 .header {
   nav {
     background-color: $blue;
-    padding: 2.5rem 0.5rem;
+    padding: 2rem 0.5rem;
     @media only screen and (min-width: 992px) {
       padding: 2.5rem 1.5rem;
     }
     .container-fluid {
+      img {
+        width: 210px;
+      }
       .navbar-toggler {
         border: 0;
         &:focus {
@@ -46,6 +49,7 @@
                 background-color: $yellow;
                 border-radius: 1.5rem;
                 color: $blue;
+                margin: 0 0.5rem;
                 padding: 1rem 1.75rem;
               }
             }
