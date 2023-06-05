@@ -1,9 +1,9 @@
 .header {
   nav {
     background-color: $blue;
-    padding: 2rem 0.5rem;
+    padding: 1.5rem 0.5rem;
     @media only screen and (min-width: 992px) {
-      padding: 2.5rem 1.5rem;
+      padding: 1.5rem 1.5rem;
     }
     .container-fluid {
       img {
@@ -29,7 +29,7 @@
           }
           .nav-link {
             color: $beige;
-            font-size: 1.25rem;
+            font-size: 1.125rem;
             font-weight: 700;
             margin: 0.25rem 0;
             &:last-child {
@@ -39,10 +39,9 @@
               color: $blue;
               display: flex;
               margin: 0.5rem 0 0 0;
-              padding: 0.25rem 1rem 0.25rem 1rem;
+              padding: 0.5rem 1.25rem;
             }
             @media only screen and (min-width: 992px) {
-              font-size: 22px;
               font-weight: 700;
               margin: 0 0.5rem;
               &:last-child {
@@ -50,7 +49,6 @@
                 border-radius: 1.5rem;
                 color: $blue;
                 margin: 0 0.5rem;
-                padding: 1rem 1.75rem;
               }
             }
           }

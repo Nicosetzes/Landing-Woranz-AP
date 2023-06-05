@@ -56,34 +56,54 @@ const generateBottomFormOptions = (jobs, locations) => {
   });
 };
 
-const jobs = [
-  "profesion1",
-  "profesion2",
-  "profesion3",
-  "profesion4",
-  "profesion5",
-  "profesion6",
-  "profesion7",
-  "profesion8",
-  "profesion9",
-];
+// const jobs = [
+//   "profesion1",
+//   "profesion2",
+//   "profesion3",
+//   "profesion4",
+//   "profesion5",
+//   "profesion6",
+//   "profesion7",
+//   "profesion8",
+//   "profesion9",
+// ];
 
-const locations = [
-  "provincia1",
-  "provincia2",
-  "provincia3",
-  "provincia4",
-  "provincia5",
-];
+// const locations = [
+//   "provincia1",
+//   "provincia2",
+//   "provincia3",
+//   "provincia4",
+//   "provincia5",
+// ];
 
-generateTopFormOptions(jobs, locations);
+// const algo = async () => {
+//   // Fetch a la API de Woranz //
 
-generateBottomFormOptions(jobs, locations);
+//   const jobs = await fetch(
+//     "https://api.api-ninjas.com/v1/cars?limit=2&model=camry",
+//     {
+//       method: "GET", // *GET, POST, PUT, DELETE, etc.
+//       mode: "cors", // no-cors, *cors, same-origin
+//       cache: "no-cache", // *default, no-cache, reload, force-cache, only-if-cached
+//       credentials: "same-origin", // include, *same-origin, omit
+//       headers: {
+//         "Content-Type": "application/json",
+//         "X-Api-Key": "YOUR_API_KEY",
+//         // 'Content-Type': 'application/x-www-form-urlencoded',
+//       },
+//       redirect: "follow", // manual, *follow, error
+//       referrerPolicy: "no-referrer", // no-referrer, *no-referrer-when-downgrade, origin, origin-when-cross-origin, same-origin, strict-origin, strict-origin-when-cross-origin, unsafe-url
+//       body: JSON.stringify(data), // body data type must match "Content-Type" header
+//     }
+//   );
 
-() => {
-  // Fetch a la API de Woranz //
-  // const locationSelect = (document.getElementById("locations").innerHTML =
-  //   generateOptions(locations));
-  // const jobSelect = (document.getElementById("locations").innerHTML =
-  //   generateOptions(jobs));
-};
+//   const jsonData = await jobs.json();
+
+//   console.log(jsonData);
+
+//   // generateTopFormOptions(jobs, locations);
+
+//   // generateBottomFormOptions(jobs, locations);
+// };
+
+// algo();

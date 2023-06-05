@@ -1,6 +1,6 @@
 .main {
   background-color: $gray;
-  padding: 123px 0 0 0; // top padding must be equal to navbar height //
+  padding: 107px 0 0 0; // top padding must be equal to navbar height //
   .main__hero {
     background-color: $yellow;
     padding: 4.5rem 1.5rem;
@@ -493,7 +493,7 @@
   .main__fifth {
     background-color: $beige;
     padding: 4rem 1.5rem;
-    scroll-margin-top: 200px; // Altura de la navbar + un extra para que el destino esté centrado //
+    scroll-margin-top: 180px; // Altura de la navbar + un extra para que el destino esté centrado //
     @media only screen and (max-width: 400px) {
       padding: 4.5rem 0.5rem;
     }
@@ -551,6 +551,11 @@
               &::after {
                 background-image: url("./../media/plus.svg");
               }
+              &:not(.collapsed) {
+                &::after {
+                  background-image: url("./../media/minus.svg");
+                }
+              }
             }
           }
           .accordion-collapse {
@@ -577,7 +582,6 @@
   .main__sixth {
     background-color: $orange;
     padding: 4rem 0.75rem;
-    scroll-margin-top: 200px; // Altura de la navbar + un extra para que el destino esté centrado //
     .sixth-introduction {
       p {
         text-align: center;
@@ -689,11 +693,6 @@
                   font-size: 3rem;
                   font-weight: 700;
                   line-height: 3rem;
-                  // @media only screen and (min-width: 992px) {
-                  //   font-size: 3rem;
-                  //   font-weight: 700;
-                  //   line-height: 3rem;
-                  // }
                 }
                 &:last-child {
                   font-size: 2.125rem;
@@ -702,7 +701,6 @@
                   margin: 3rem auto;
                   @media only screen and (min-width: 992px) {
                     font-size: 1.75rem;
-                    // font-weight: 450;
                     line-height: 1.75rem;
                     margin: 0.75rem auto;
                   }
@@ -808,21 +806,24 @@
     }
     .eighth-introduction {
       display: flex;
+      flex-direction: column;
       flex-wrap: wrap;
       padding: 2.5rem 1rem;
       @media only screen and (min-width: 992px) {
-        flex-direction: column;
       }
       .eighth-introduction-banner {
         align-items: center;
         display: flex;
-        height: 100px;
+        height: fit-content;
         justify-content: center;
         margin: 0 auto;
         padding: 1rem 0 0 0;
         width: 350px;
         @media only screen and (max-width: 400px) {
           width: 100%;
+        }
+        @media only screen and (min-width: 992px) {
+          justify-content: start;
         }
         img {
           @media only screen and (max-width: 400px) {
@@ -831,6 +832,9 @@
         }
       }
       .eighth-introduction-paragraph {
+        display: flex;
+        justify-content: center;
+        margin: 0.5rem 0;
         p {
           font-size: 1.5rem;
           font-weight: 500;
@@ -840,6 +844,7 @@
       }
       .eighth-introduction-social {
         display: flex;
+        justify-content: center;
         width: 100%;
         .social__container {
           align-items: center;
@@ -853,6 +858,9 @@
           width: 65px;
           &:first-child {
             margin: 0 0.5rem 0 0;
+          }
+          &:last-child {
+            margin: 0 0rem 0 0.5rem;
           }
         }
       }
@@ -877,6 +885,7 @@
         font-weight: 500;
         line-height: 30px;
         padding: 1.5rem 0;
+        text-decoration: none;
         width: 100%;
         @media only screen and (min-width: 992px) {
           font-size: 1.25rem;
