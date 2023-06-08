@@ -198,6 +198,12 @@ p {
   font-weight: 700;
   margin: 0.25rem 0;
 }
+@media only screen and (min-width: 992px) {
+  .header nav .container-fluid .navbar-collapse .navbar-nav .nav-link {
+    font-weight: 700;
+    margin: 0 0.5rem;
+  }
+}
 .header nav .container-fluid .navbar-collapse .navbar-nav .nav-link:last-child {
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -211,11 +217,10 @@ p {
   margin: 0.5rem 0 0 0;
   padding: 0.5rem 1.25rem;
 }
+.header nav .container-fluid .navbar-collapse .navbar-nav .nav-link:last-child:hover {
+  background-color: #ff8542;
+}
 @media only screen and (min-width: 992px) {
-  .header nav .container-fluid .navbar-collapse .navbar-nav .nav-link {
-    font-weight: 700;
-    margin: 0 0.5rem;
-  }
   .header nav .container-fluid .navbar-collapse .navbar-nav .nav-link:last-child {
     background-color: #f3d52a;
     border-radius: 1.5rem;
@@ -269,26 +274,28 @@ p {
     position: relative;
   }
 }
-.main .main__hero .hero-content > p {
+.main .main__hero .hero-content > h1,
+.main .main__hero .hero-content p {
   text-align: center;
 }
-.main .main__hero .hero-content > p:nth-child(1) {
+.main .main__hero .hero-content h1 {
+  color: #323d4a;
   font-size: 4rem;
   font-weight: 700;
   line-height: 4rem;
   margin: 0 0 1rem 0;
 }
 @media only screen and (max-width: 400px) {
-  .main .main__hero .hero-content > p:nth-child(1) {
+  .main .main__hero .hero-content h1 {
     width: 100%;
   }
 }
 @media only screen and (min-width: 992px) {
-  .main .main__hero .hero-content > p:nth-child(1) {
+  .main .main__hero .hero-content h1 {
     text-align: left;
   }
 }
-.main .main__hero .hero-content > p:nth-child(2) {
+.main .main__hero .hero-content p {
   font-size: 2rem;
   font-weight: 500;
   line-height: 2.125rem;
@@ -296,12 +303,12 @@ p {
   width: 350px;
 }
 @media only screen and (min-width: 576px) {
-  .main .main__hero .hero-content > p:nth-child(2) {
+  .main .main__hero .hero-content p {
     width: 500px;
   }
 }
 @media only screen and (min-width: 992px) {
-  .main .main__hero .hero-content > p:nth-child(2) {
+  .main .main__hero .hero-content p {
     margin: 0 0 1rem 0;
     max-width: 350px;
     text-align: left;
@@ -330,6 +337,9 @@ p {
     text-align: left;
   }
 }
+.main .main__hero .hero-content > div img {
+  max-width: 325px;
+}
 @media only screen and (max-width: 400px) {
   .main .main__hero .hero-content > div img {
     width: 100%;
@@ -338,13 +348,12 @@ p {
 @media only screen and (min-width: 576px) {
   .main .main__hero .hero-content > div img {
     margin: 0 auto;
-    width: 360px;
   }
 }
 @media only screen and (min-width: 992px) {
   .main .main__hero .hero-content > div img {
     position: absolute;
-    left: 230px;
+    left: 250px;
     top: 200px;
   }
 }
@@ -497,7 +506,8 @@ p {
   margin: 0 0 2rem 0;
   padding: 0 0.5rem;
 }
-.main .main__third .third-introduction p:first-child {
+.main .main__third .third-introduction h2 {
+  color: #323d4a;
   font-size: 3rem;
   font-weight: 700;
   line-height: 3rem;
@@ -505,11 +515,11 @@ p {
   text-align: center;
 }
 @media only screen and (min-width: 768px) {
-  .main .main__third .third-introduction p:first-child {
+  .main .main__third .third-introduction h2 {
     max-width: 768px;
   }
 }
-.main .main__third .third-introduction p:last-child {
+.main .main__third .third-introduction p {
   font-size: 2.125rem;
   font-weight: 450;
   line-height: 3.125rem;
@@ -592,7 +602,6 @@ p {
       -ms-flex-align: center;
           align-items: center;
   background-color: #ff8542;
-  border: 0;
   border-radius: 2rem;
   color: #323d4a;
   display: -webkit-box;
@@ -609,6 +618,10 @@ p {
   position: relative;
   text-decoration: none;
   z-index: 10;
+}
+.main .main__third .third-content .third-content-container.hero .button-main:hover {
+  background-color: #323d4a;
+  color: #f3d52a;
 }
 @media only screen and (min-width: 992px) {
   .main .main__third .third-content .third-content-container.hero .button-main {
@@ -755,7 +768,7 @@ p {
     padding: 4.5rem 0.5rem;
   }
 }
-.main .main__fourth .fourth-introduction p {
+.main .main__fourth .fourth-introduction h2 {
   color: #f9f4e1;
   font-size: 3rem;
   font-weight: 700;
@@ -852,7 +865,7 @@ p {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  height: 175px;
+  height: 200px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -883,7 +896,6 @@ p {
       -ms-flex-align: center;
           align-items: center;
   background-color: #ff8542;
-  border: 0;
   border-radius: 2rem;
   color: #323d4a;
   display: -webkit-box;
@@ -899,6 +911,9 @@ p {
   padding: 1rem 3rem;
   text-decoration: none;
   width: 300px;
+}
+.main .main__fourth .button-main:hover {
+  background-color: #f3d52a;
 }
 .main .main__fifth {
   background-color: #f9f4e1;
@@ -1026,16 +1041,12 @@ p {
 }
 @media only screen and (min-width: 576px) {
   .main .main__sixth .sixth-content {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-  }
-}
-@media only screen and (min-width: 768px) {
-  .main .main__sixth .sixth-content {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
 }
 @media only screen and (min-width: 992px) {
@@ -1056,7 +1067,7 @@ p {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  font-size: 2rem;
+  font-size: 1.75rem;
   font-weight: 700;
   height: 80px;
   -webkit-box-pack: center;
@@ -1064,7 +1075,11 @@ p {
           justify-content: center;
   line-height: 2.5rem;
   margin: 2.5rem auto 2.5rem auto;
-  padding: 1.25rem 3.5rem;
+  padding: 1.5rem 3rem;
+}
+.main .main__sixth .sixth-content button:hover {
+  background-color: #f3d52a;
+  color: #323d4a;
 }
 @media only screen and (min-width: 768px) {
   .main .main__sixth .sixth-content button {
@@ -1342,6 +1357,9 @@ p {
         -ms-flex-pack: start;
             justify-content: start;
   }
+}
+.main .main__eighth .eighth-introduction .eighth-introduction-banner img {
+  max-width: 325px;
 }
 @media only screen and (max-width: 400px) {
   .main .main__eighth .eighth-introduction .eighth-introduction-banner img {
