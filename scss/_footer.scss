@@ -1,0 +1,165 @@
+footer {
+  .footer__first {
+    background-color: $beige;
+    padding: 4rem 0.75rem;
+    @media only screen and (min-width: 992px) {
+      display: flex;
+      justify-content: space-around;
+    }
+    .first-introduction {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      padding: 2.5rem 1rem;
+      @media only screen and (min-width: 992px) {
+      }
+      .first-introduction-banner {
+        align-items: center;
+        display: flex;
+        height: fit-content;
+        justify-content: center;
+        margin: 0 auto;
+        padding: 1rem 0 0 0;
+        width: 350px;
+        @media only screen and (max-width: 400px) {
+          width: 100%;
+        }
+        @media only screen and (min-width: 992px) {
+          justify-content: start;
+        }
+        img {
+          max-width: 325px;
+          @media only screen and (max-width: 400px) {
+            width: 100%;
+          }
+        }
+      }
+      .first-introduction-paragraph {
+        display: flex;
+        justify-content: center;
+        margin: 0.5rem 0;
+        p {
+          font-size: 1.5rem;
+          font-weight: 500;
+          line-height: 30px;
+          margin: 1.5rem 0;
+        }
+      }
+      .first-introduction-social {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        .social__container {
+          align-items: center;
+          background-color: $orange;
+          border: 0;
+          border-radius: 0.5rem;
+          display: flex;
+          height: 65px;
+          justify-content: center;
+          margin: 0 0.5rem;
+          width: 65px;
+          &:first-child {
+            margin: 0 0.5rem 0 0;
+          }
+          &:last-child {
+            margin: 0 0rem 0 0.5rem;
+          }
+        }
+      }
+    }
+    .first-content {
+      align-items: center;
+      display: flex;
+      flex-wrap: wrap;
+      margin: 1rem auto;
+      @media only screen and (min-width: 992px) {
+        flex-direction: column;
+        flex-basis: 500px;
+        height: 225px;
+        margin: auto 0;
+      }
+      .first-content-container {
+        align-items: center;
+        border-bottom: $blue 1px solid;
+        color: $blue;
+        display: flex;
+        font-size: 1.5rem;
+        font-weight: 500;
+        line-height: 30px;
+        padding: 1.5rem 0;
+        text-decoration: none;
+        width: 100%;
+        @media only screen and (min-width: 992px) {
+          font-size: 1.25rem;
+          height: 75px;
+          margin: 0 0.25rem;
+          padding: 0.5rem 0;
+          width: 200px;
+        }
+        &:hover {
+          span {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  }
+  .footer__second {
+    background-color: $blue;
+    padding: 3rem 1.25rem 4rem 1.25rem;
+    .second-content {
+      display: flex;
+      flex-wrap: wrap;
+      .second-content-container {
+        margin: 1rem auto;
+        width: 100%;
+        @media only screen and (min-width: 992px) {
+          align-items: center;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          max-width: 275px;
+        }
+        p {
+          color: $beige;
+          font-size: 1rem;
+          font-weight: 450;
+          line-height: 1.25rem;
+          margin: 0.25rem 0;
+          text-align: center;
+          &:last-child {
+            font-weight: 700;
+          }
+        }
+      }
+      .second-content-logo {
+        margin: 2rem auto 3rem auto;
+        @media only screen and (max-width: 400px) {
+          width: 100%;
+        }
+      }
+      .second-content-legal {
+        margin: 0 auto 2rem auto;
+        @media only screen and (min-width: 992px) {
+          align-items: center;
+          display: flex;
+          margin: 0 auto;
+          width: 750px;
+        }
+        p {
+          color: $beige;
+          font-size: 0.75rem;
+          font-weight: 450;
+          line-height: 15px;
+          @media only screen and (min-width: 992px) {
+            margin: 0;
+          }
+        }
+      }
+      .second-content-qr {
+        margin: 0 auto;
+      }
+    }
+  }
+}

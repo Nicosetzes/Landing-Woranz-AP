@@ -110,7 +110,7 @@
       @media only screen and (min-width: 992px) {
         width: 800px;
       }
-      p {
+      h3 {
         font-size: 3rem;
         font-weight: 700;
         line-height: 3.375rem;
@@ -421,8 +421,9 @@
             font-weight: 450;
           }
           a {
-            color: $orange;
-            text-decoration: none;
+            color: $blue;
+            font-weight: 500;
+            text-decoration: underline;
           }
         }
       }
@@ -474,6 +475,11 @@
             font-size: 1rem;
             font-weight: 450;
           }
+          a {
+            color: $blue;
+            font-weight: 600;
+            text-decoration: underline;
+          }
         }
       }
     }
@@ -506,22 +512,22 @@
     .fifth-introduction {
       margin: 0 0 2rem 0;
       p {
+        font-size: 3.375rem;
+        font-weight: 700;
+        line-height: 55px;
         text-align: center;
-        &:first-child {
-          font-size: 3.375rem;
-          font-weight: 700;
-          line-height: 55px;
-          @media only screen and (max-width: 400px) {
-            font-size: 3rem;
-          }
+        @media only screen and (max-width: 400px) {
+          font-size: 3rem;
         }
-        &:last-child {
-          font-size: 2rem;
-          font-weight: 500;
-          line-height: 50px;
-          @media only screen and (max-width: 400px) {
-            font-size: 1.75rem;
-          }
+      }
+      h3 {
+        color: $blue;
+        font-size: 2rem;
+        font-weight: 500;
+        line-height: 50px;
+        text-align: center;
+        @media only screen and (max-width: 400px) {
+          font-size: 1.75rem;
         }
       }
     }
@@ -589,24 +595,23 @@
     background-color: $orange;
     padding: 4rem 0.75rem;
     .sixth-introduction {
-      p {
+      h2 {
+        color: $white;
+        font-size: 39px;
+        font-weight: 700;
+        line-height: 39px;
         text-align: center;
-        &:first-child {
-          color: $white;
-          font-size: 39px;
-          font-weight: 700;
-          line-height: 39px;
-        }
-        &:last-child {
-          color: $blue;
-          font-size: 2rem;
-          font-weight: 450;
-          line-height: 34px;
-          margin: 2rem 0;
-          @media only screen and (min-width: 768px) {
-            margin: 2rem auto;
-            width: 700px;
-          }
+      }
+      p {
+        color: $blue;
+        font-size: 2rem;
+        font-weight: 450;
+        line-height: 34px;
+        margin: 2rem 0;
+        text-align: center;
+        @media only screen and (min-width: 768px) {
+          margin: 2rem auto;
+          width: 700px;
         }
       }
     }
@@ -618,7 +623,7 @@
       @media only screen and (min-width: 992px) {
         justify-content: center;
       }
-      button {
+      a {
         align-items: center;
         background-color: $blue;
         border: 0;
@@ -631,7 +636,9 @@
         justify-content: center;
         line-height: 2.5rem;
         margin: 2.5rem auto 2.5rem auto;
+        max-width: 265px;
         padding: 1.5rem 3rem;
+        text-decoration: none;
         &:hover {
           background-color: $yellow;
           color: $blue;
@@ -693,25 +700,26 @@
             }
             &:first-child {
               p {
+                font-size: 3rem;
+                font-weight: 700;
+                line-height: 3rem;
                 text-align: center;
                 @media only screen and (min-width: 992px) {
                   text-align: left;
                 }
-                &:first-child {
-                  font-size: 3rem;
-                  font-weight: 700;
-                  line-height: 3rem;
-                }
-                &:last-child {
-                  font-size: 2.125rem;
-                  font-weight: 450;
-                  line-height: 2.125rem;
-                  margin: 3rem auto;
-                  @media only screen and (min-width: 992px) {
-                    font-size: 1.75rem;
-                    line-height: 1.75rem;
-                    margin: 0.75rem auto;
-                  }
+              }
+              h2 {
+                color: $blue;
+                font-size: 2.125rem;
+                font-weight: 450;
+                line-height: 2.125rem;
+                margin: 3rem auto;
+                text-align: center;
+                @media only screen and (min-width: 992px) {
+                  font-size: 1.75rem;
+                  line-height: 1.75rem;
+                  margin: 0.75rem auto;
+                  text-align: left;
                 }
               }
             }
@@ -802,164 +810,6 @@
           line-height: 2rem;
           text-align: center;
         }
-      }
-    }
-  }
-  .main__eighth {
-    background-color: $beige;
-    padding: 4rem 0.75rem;
-    @media only screen and (min-width: 992px) {
-      display: flex;
-      justify-content: space-around;
-    }
-    .eighth-introduction {
-      display: flex;
-      flex-direction: column;
-      flex-wrap: wrap;
-      padding: 2.5rem 1rem;
-      @media only screen and (min-width: 992px) {
-      }
-      .eighth-introduction-banner {
-        align-items: center;
-        display: flex;
-        height: fit-content;
-        justify-content: center;
-        margin: 0 auto;
-        padding: 1rem 0 0 0;
-        width: 350px;
-        @media only screen and (max-width: 400px) {
-          width: 100%;
-        }
-        @media only screen and (min-width: 992px) {
-          justify-content: start;
-        }
-        img {
-          max-width: 325px;
-          @media only screen and (max-width: 400px) {
-            width: 100%;
-          }
-        }
-      }
-      .eighth-introduction-paragraph {
-        display: flex;
-        justify-content: center;
-        margin: 0.5rem 0;
-        p {
-          font-size: 1.5rem;
-          font-weight: 500;
-          line-height: 30px;
-          margin: 1.5rem 0;
-        }
-      }
-      .eighth-introduction-social {
-        display: flex;
-        justify-content: center;
-        width: 100%;
-        .social__container {
-          align-items: center;
-          background-color: $orange;
-          border: 0;
-          border-radius: 0.5rem;
-          display: flex;
-          height: 65px;
-          justify-content: center;
-          margin: 0 0.5rem;
-          width: 65px;
-          &:first-child {
-            margin: 0 0.5rem 0 0;
-          }
-          &:last-child {
-            margin: 0 0rem 0 0.5rem;
-          }
-        }
-      }
-    }
-    .eighth-content {
-      align-items: center;
-      display: flex;
-      flex-wrap: wrap;
-      margin: 1rem auto;
-      @media only screen and (min-width: 992px) {
-        flex-direction: column;
-        flex-basis: 500px;
-        height: 225px;
-        margin: auto 0;
-      }
-      .eighth-content-container {
-        align-items: center;
-        border-bottom: $blue 1px solid;
-        color: $blue;
-        display: flex;
-        font-size: 1.5rem;
-        font-weight: 500;
-        line-height: 30px;
-        padding: 1.5rem 0;
-        text-decoration: none;
-        width: 100%;
-        @media only screen and (min-width: 992px) {
-          font-size: 1.25rem;
-          height: 75px;
-          margin: 0 0.25rem;
-          padding: 0.5rem 0;
-          width: 200px;
-        }
-      }
-    }
-  }
-  .main__nineth {
-    background-color: $blue;
-    padding: 3rem 1.25rem 4rem 1.25rem;
-    .nineth-content {
-      display: flex;
-      flex-wrap: wrap;
-      .nineth-content-container {
-        margin: 1rem auto;
-        width: 100%;
-        @media only screen and (min-width: 992px) {
-          align-items: center;
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
-          max-width: 275px;
-        }
-        p {
-          color: $beige;
-          font-size: 1rem;
-          font-weight: 450;
-          line-height: 1.25rem;
-          margin: 0.25rem 0;
-          text-align: center;
-          &:last-child {
-            font-weight: 700;
-          }
-        }
-      }
-      .nineth-content-logo {
-        margin: 2rem auto 3rem auto;
-        @media only screen and (max-width: 400px) {
-          width: 100%;
-        }
-      }
-      .nineth-content-legal {
-        margin: 0 auto 2rem auto;
-        @media only screen and (min-width: 992px) {
-          align-items: center;
-          display: flex;
-          margin: 0 auto;
-          width: 750px;
-        }
-        p {
-          color: $beige;
-          font-size: 0.75rem;
-          font-weight: 450;
-          line-height: 15px;
-          @media only screen and (min-width: 992px) {
-            margin: 0;
-          }
-        }
-      }
-      .nineth-content-qr {
-        margin: 0 auto;
       }
     }
   }
