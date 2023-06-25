@@ -1,6 +1,6 @@
 .main {
   background-color: $gray;
-  padding: 107px 0 0 0; // top padding must be equal to navbar height //
+  padding: 121px 0 0 0; // top padding must be equal to navbar height //
   .main__hero {
     background-color: $yellow;
     padding: 4.5rem 1.5rem;
@@ -34,6 +34,7 @@
         line-height: 4rem;
         margin: 0 0 1rem 0;
         @media only screen and (max-width: 400px) {
+          font-size: 3.5rem;
           width: 100%;
         }
         @media only screen and (min-width: 992px) {
@@ -41,11 +42,13 @@
         }
       }
       p {
-        font-size: 2rem;
+        font-size: 1.5rem;
         font-weight: 500;
         line-height: 2.125rem;
         margin: 0 auto 1rem auto;
-        width: 350px;
+        @media only screen and (min-width: 400px) {
+          font-size: 2rem;
+        }
         @media only screen and (min-width: 576px) {
           width: 500px;
         }
@@ -501,7 +504,7 @@
   .main__fifth {
     background-color: $beige;
     padding: 4rem 1.5rem;
-    scroll-margin-top: 180px; // Altura de la navbar + un extra para que el destino esté centrado //
+    scroll-margin-top: 200px; // Altura de la navbar + un extra para que el destino esté centrado //
     @media only screen and (max-width: 400px) {
       padding: 4.5rem 0.5rem;
     }
@@ -513,6 +516,9 @@
         font-weight: 700;
         line-height: 55px;
         text-align: center;
+        @media only screen and (max-width: 400px) {
+          font-size: 2.75rem;
+        }
       }
     }
     .fifth-content {
@@ -564,9 +570,46 @@
     }
   }
   .main__sixth {
-    background-color: $orange;
+    align-items: center;
+    background-color: $blue;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     padding: 4rem 0.75rem;
-    .sixth-introduction {
+    p {
+      text-align: center;
+      &:nth-child(1) {
+        color: #fff;
+        font-size: 3rem;
+        font-weight: 700;
+      }
+      &:nth-child(2) {
+        color: $yellow;
+        font-size: 1.25rem;
+        font-weight: 500;
+        svg {
+          color: #25d366;
+        }
+      }
+    }
+    a {
+      background-color: $yellow;
+      border: 0;
+      border-radius: 2rem;
+      color: $blue;
+      font-size: 1.5rem;
+      font-weight: 700;
+      margin: 1rem 0 0 0;
+      padding: 0.5em 2.5em;
+      max-width: 300px;
+      text-decoration: none;
+    }
+  }
+  .main__seventh {
+    background-color: $orange;
+    scroll-margin-top: 200px; // Altura de la navbar + un extra para que el destino esté centrado //
+    padding: 4rem 0.75rem;
+    .seventh-introduction {
       h2 {
         color: $white;
         font-size: 3rem;
@@ -587,7 +630,7 @@
         }
       }
     }
-    .sixth-content {
+    .seventh-content {
       align-items: center;
       display: flex;
       flex-wrap: wrap;
@@ -624,7 +667,7 @@
           margin: 0 2rem;
         }
       }
-      .sixth-content-image {
+      .seventh-content-image {
         margin: 0 auto;
         max-width: 225px;
         @media only screen and (max-width: 400px) {
@@ -639,7 +682,7 @@
           width: 225px;
         }
       }
-      .sixth-content-image_lg {
+      .seventh-content-image_lg {
         display: none;
         @media only screen and (min-width: 768px) {
           display: flex;
@@ -648,19 +691,19 @@
       }
     }
   }
-  .main__seventh {
+  .main__eighth {
     background-color: $yellow;
     padding: 4rem 0.75rem;
     @media only screen and (min-width: 992px) {
       padding: 3rem 0.75rem;
     }
-    .seventh-content {
-      .seventh__row {
+    .eighth-content {
+      .eighth__row {
         @media only screen and (min-width: 992px) {
           display: flex;
           justify-content: space-evenly;
         }
-        .seventh__column {
+        .eighth__column {
           margin: 2rem 0;
           @media only screen and (min-width: 992px) {
             display: flex;
@@ -668,7 +711,7 @@
             justify-content: center;
             position: relative;
           }
-          .seventh-content-container {
+          .eighth-content-container {
             @media only screen and (min-width: 992px) {
               width: 400px;
             }
@@ -721,6 +764,9 @@
                 margin: 0;
                 text-align: center;
                 text-transform: uppercase;
+                @media only screen and (max-width: 400px) {
+                  font-size: 1.5rem;
+                }
                 @media only screen and (min-width: 992px) {
                   font-size: 1.25rem;
                   line-height: 2rem;
@@ -728,7 +774,7 @@
               }
             }
           }
-          .seventh-content-image {
+          .eighth-content-image {
             display: flex;
             height: 325px;
             position: relative;
@@ -749,7 +795,7 @@
               }
             }
           }
-          .seventh-content-form {
+          .eighth-content-form {
             background-color: $white;
             border-radius: 10px;
             display: flex;

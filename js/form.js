@@ -1,28 +1,58 @@
-// Obtengo la fecha actual (en el formato necesario), para los formularios //
+/* Obtengo la fecha actual (en el formato necesario), para los formularios */
 
 const currentDate = new Date();
 
-const getYear = currentDate.toLocaleString("default", { year: "numeric" });
-const getMonth = currentDate.toLocaleString("default", { month: "2-digit" });
-const getDay = currentDate.toLocaleString("default", { day: "2-digit" });
+/* endDate será la fecha de finalización, 1 mes más tarde que la actual */
 
-const dateFormat = getYear + "-" + getMonth + "-" + getDay;
+const endDate = new Date(new Date().setDate(currentDate.getDate() + 30));
 
-// Inserto ese valor en el DOM, tanto como valor mínimo como inicial, en todos los inputs de clase "date-start" //
+/* Obtengo por separado cada año (YYYY), mes (MM) y día (DD) */
+
+const getCurrentDateYear = currentDate.toLocaleString("default", {
+  year: "numeric",
+});
+const getCurrentDateMonth = currentDate.toLocaleString("default", {
+  month: "2-digit",
+});
+const getCurrentDateDay = currentDate.toLocaleString("default", {
+  day: "2-digit",
+});
+
+const getEndDateYear = endDate.toLocaleString("default", {
+  year: "numeric",
+});
+const getEndDateMonth = endDate.toLocaleString("default", {
+  month: "2-digit",
+});
+const getEndDateDay = endDate.toLocaleString("default", {
+  day: "2-digit",
+});
+
+/* Modifico el formato de ambas, necesario para el form (YYYY-MM-DD) */
+
+const definitiveCurrentDate =
+  getCurrentDateYear + "-" + getCurrentDateMonth + "-" + getCurrentDateDay;
+
+const definitiveEndDate =
+  getEndDateYear + "-" + getEndDateMonth + "-" + getEndDateDay;
+
+/* Inserto el valor de currentDate en el DOM, tanto como valor mínimo como inicial, en todos los inputs de clase "date-start" */
 
 const allDateStart = document.querySelectorAll(".date-start");
 
 allDateStart.forEach((input) => {
-  input.min = dateFormat;
-  input.value = dateFormat;
+  input.min = definitiveCurrentDate;
+  input.value = definitiveCurrentDate;
 });
 
-// Inserto ese valor en el DOM, como valor mínimo, en todos los inputs de clase "date-end" //
+/* Inserto el valor de endDate en el DOM, como valor inicial, en todos los inputs de clase "date-end" */
+/* El valor mínimo sigue siendo currentDate */
 
 const allDateEnd = document.querySelectorAll(".date-end");
 
 allDateEnd.forEach((input) => {
-  input.min = dateFormat;
+  input.min = definitiveCurrentDate;
+  input.value = definitiveEndDate;
 });
 
 // PRODUCTORES //

@@ -17,3 +17,26 @@ h3 {
 p {
   color: $blue;
 }
+
+.whatsapp-fixed {
+  display: none;
+  @media only screen and (min-width: 768px) {
+    align-items: center;
+    background-color: #25d366;
+    border-radius: 50px;
+    bottom: 20px;
+    box-shadow: 2px 2px 3px #575656;
+    display: flex;
+    font-size: 30px;
+    height: 75px;
+    justify-content: center;
+    position: fixed;
+    right: 20px;
+    width: 75px;
+    text-align: center;
+    z-index: 1000000;
+    svg {
+      color: #fff;
+    }
+  }
+}

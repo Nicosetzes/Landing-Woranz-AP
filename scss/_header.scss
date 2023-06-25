@@ -1,16 +1,19 @@
 .header {
   nav {
     background-color: $blue;
-    padding: 1.5rem 0.5rem;
+    padding: 1.5rem 0.75rem;
     @media only screen and (min-width: 992px) {
       padding: 1.5rem 1.5rem;
     }
     .container-fluid {
+      padding-bottom: 0.75rem;
+      padding-top: 0.75rem;
       img {
-        width: 210px;
+        width: 175px;
       }
       .navbar-toggler {
         border: 0;
+        font-size: 1rem;
         &:focus {
           box-shadow: none;
         }
@@ -35,6 +38,9 @@
             @media only screen and (min-width: 992px) {
               font-weight: 700;
               margin: 0 0.5rem;
+            }
+            &:nth-child(2) {
+              color: $yellow;
             }
             &:last-child {
               align-items: center;
