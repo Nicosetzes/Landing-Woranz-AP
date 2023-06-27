@@ -289,7 +289,7 @@ p {
   }
 }
 .header nav .container-fluid .navbar-collapse .navbar-nav .nav-link:nth-child(2) {
-  color: #f3d52a;
+  text-decoration: underline;
 }
 .header nav .container-fluid .navbar-collapse .navbar-nav .nav-link:last-child {
   -webkit-box-align: center;
