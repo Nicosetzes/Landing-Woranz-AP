@@ -1,3 +1,16 @@
+/* Agrego clase "animated" al #form-top al clickear en el correspondiente enlace del header */
+
+const link = document.querySelector("#link-form");
+
+link.addEventListener("click", () => {
+  const form = document.querySelector("#form-top");
+  form.classList.add("animated");
+  /* Elimino la clase luego de 1.75 seg, para que pueda volver a animarse en caso de necesidad */
+  setTimeout(() => {
+    form.classList.remove("animated");
+  }, 1750);
+});
+
 /* Obtengo la fecha actual (en el formato necesario), para los formularios */
 
 const currentDate = new Date();
@@ -209,16 +222,9 @@ forms.forEach((form) => {
     const fechaInicio = e.target.querySelector(".date-start").value;
     const fechaFin = e.target.querySelector(".date-end").value;
 
-    console.log(idOcupacion);
-    console.log(idProvincia);
-    console.log(cantidadDeAsegurados);
-    console.log(fechaInicio);
-    console.log(fechaFin);
-
     // Asigno un productor, de manera aleatoria //
 
     const idProductor = seleccionarProductorAlAzar(productores);
-    console.log(idProductor);
 
     // Hago un redirect a Woranz Live, comunicando la información proveniente del formulario a través de query params  //
 

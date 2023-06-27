@@ -1,18 +1,35 @@
+/* Defino una animación para el form, la clase .animated será agregada al clickear en el enlace del header */
+
+@keyframes form-animation {
+  from {
+    transform: 0;
+  }
+  25% {
+    transform: translate(7.5%);
+  }
+  75% {
+    transform: translate(-7.5%);
+  }
+}
+
 .form {
   background-color: $white;
+  outline: 0;
   border-radius: 10px;
   display: flex;
   flex-direction: column;
   margin: 0 auto;
   max-width: 500px;
   padding: 2rem 1.5rem;
-  scroll-margin-top: 200px; // Altura de la navbar + un extra para que el destino esté centrado en mobile //
+  scroll-margin-top: 200px; /* Altura de la navbar + un extra para que el destino esté centrado en mobile */
+  &.animated {
+    animation: 1.5s linear forwards form-animation; /* Animación */
+  }
   @media only screen and (max-width: 400px) {
     width: 100%;
   }
   @media only screen and (min-width: 992px) {
-    max-width: 450px;
-    // scroll-margin-top: 123px; // Altura de la navbar + extra //
+    max-width: 425px;
   }
   @media only screen and (min-width: 1200px) {
     margin: 0;
@@ -58,7 +75,7 @@
           }
         }
         input {
-          // Hide arrows from input type = "number"
+          /* Hide arrows from input type = "number" */
           &::-webkit-outer-spin-button,
           &::-webkit-inner-spin-button {
             -webkit-appearance: none;

@@ -1,6 +1,6 @@
 .main {
   background-color: $gray;
-  padding: 121px 0 0 0; // top padding must be equal to navbar height //
+  padding: 121px 0 0 0; /* El padding top debe ser igual a la altura de la navbar */
   .main__hero {
     background-color: $yellow;
     padding: 4.5rem 1.5rem;
@@ -245,6 +245,7 @@
           .button-main {
             align-items: center;
             background-color: $orange;
+            border: 0;
             border-radius: 2rem;
             color: $blue;
             display: flex;
@@ -253,18 +254,14 @@
             justify-content: center;
             line-height: 2.5rem;
             margin: 0 auto;
-            padding: 1.25rem 3rem;
+            min-width: 290px;
+            padding: 0.5em 2.5em;
             position: relative;
             text-decoration: none;
             z-index: 10;
             &:hover {
               background-color: $blue;
               color: $yellow;
-            }
-            @media only screen and (min-width: 992px) {
-              font-size: 1.5rem;
-              padding: 1.25rem 3rem;
-              width: 280px;
             }
           }
           .elipse {
@@ -485,6 +482,7 @@
     .button-main {
       align-items: center;
       background-color: $orange;
+      border: 0;
       border-radius: 2rem;
       color: $blue;
       display: flex;
@@ -493,9 +491,9 @@
       justify-content: center;
       line-height: 2.5rem;
       margin: 2.5rem auto 0 auto;
-      padding: 1rem 3rem;
+      padding: 0.5em 2.5em;
       text-decoration: none;
-      width: 300px;
+      width: fit-content;
       &:hover {
         background-color: $yellow;
       }
@@ -504,7 +502,7 @@
   .main__fifth {
     background-color: $beige;
     padding: 4rem 1.5rem;
-    scroll-margin-top: 200px; // Altura de la navbar + un extra para que el destino esté centrado //
+    scroll-margin-top: 200px; /* Altura de la navbar + un extra para que el destino esté centrado */
     @media only screen and (max-width: 400px) {
       padding: 4.5rem 0.5rem;
     }
@@ -597,17 +595,24 @@
       border: 0;
       border-radius: 2rem;
       color: $blue;
+      display: flex;
       font-size: 1.5rem;
       font-weight: 700;
       margin: 1rem 0 0 0;
       padding: 0.5em 2.5em;
-      max-width: 300px;
       text-decoration: none;
+      width: fit-content;
+      &:hover {
+        background-color: $orange;
+      }
+      svg {
+        margin: 0 0.75rem 0 0;
+      }
     }
   }
   .main__seventh {
     background-color: $orange;
-    scroll-margin-top: 200px; // Altura de la navbar + un extra para que el destino esté centrado //
+    scroll-margin-top: 200px; /* Altura de la navbar + un extra para que el destino esté centrado */
     padding: 4rem 0.75rem;
     .seventh-introduction {
       h2 {
@@ -646,22 +651,18 @@
         display: flex;
         font-size: 1.5rem;
         font-weight: 700;
-        height: 80px;
         justify-content: center;
         line-height: 2.5rem;
         margin: 2.5rem auto 2.5rem auto;
-        max-width: 265px;
-        padding: 1.5rem 3rem;
+        padding: 0.5em 2.5em;
         text-decoration: none;
+        width: fit-content;
         &:hover {
           background-color: $yellow;
           color: $blue;
         }
         @media only screen and (min-width: 768px) {
-          height: fit-content;
-          line-height: 1rem;
           margin: 1.5rem auto;
-          padding: 2.25rem 2.5rem;
         }
         @media only screen and (min-width: 992px) {
           margin: 0 2rem;
@@ -712,16 +713,16 @@
             position: relative;
           }
           .eighth-content-container {
-            @media only screen and (min-width: 992px) {
-              width: 400px;
-            }
             &:first-child {
               p {
                 font-size: 3rem;
                 font-weight: 700;
                 line-height: 3rem;
+                margin: 0 auto;
+                max-width: 575px;
                 text-align: center;
                 @media only screen and (min-width: 992px) {
+                  margin: 0 auto 0 0.5rem;
                   text-align: left;
                 }
               }
@@ -731,11 +732,13 @@
                 font-weight: 450;
                 line-height: 2.125rem;
                 margin: 3rem auto;
+                max-width: 650px;
                 text-align: center;
                 @media only screen and (min-width: 992px) {
                   font-size: 1.5rem;
                   line-height: 1.75rem;
-                  margin: 0.75rem auto;
+                  margin: 0.75rem auto 0 0.5rem;
+                  max-width: 475px;
                   text-align: left;
                 }
               }
@@ -752,7 +755,7 @@
               padding: 2rem;
               @media only screen and (min-width: 992px) {
                 height: 150px;
-                margin: 1rem 0 0 auto;
+                margin: 1rem 3rem 0 auto;
                 padding: 1.5rem 1.75rem;
                 width: 300px;
               }
@@ -790,6 +793,7 @@
               left: 50%;
               transform: translateX(-50%);
               @media only screen and (min-width: 992px) {
+                left: 50px;
                 transform: none;
                 width: 250px;
               }
@@ -805,7 +809,7 @@
               width: 100%;
             }
             @media only screen and (min-width: 992px) {
-              width: 400px;
+              max-width: 400px;
             }
             img {
               width: 100%;
