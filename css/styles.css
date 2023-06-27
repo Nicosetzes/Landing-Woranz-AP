@@ -58,12 +58,12 @@ p {
             transform: 0;
   }
   25% {
-    -webkit-transform: translate(7.5%);
-            transform: translate(7.5%);
+    -webkit-transform: translate(2.5%);
+            transform: translate(2.5%);
   }
   75% {
-    -webkit-transform: translate(-7.5%);
-            transform: translate(-7.5%);
+    -webkit-transform: translate(-2.5%);
+            transform: translate(-2.5%);
   }
 }
 @keyframes form-animation {
@@ -72,12 +72,12 @@ p {
             transform: 0;
   }
   25% {
-    -webkit-transform: translate(7.5%);
-            transform: translate(7.5%);
+    -webkit-transform: translate(2.5%);
+            transform: translate(2.5%);
   }
   75% {
-    -webkit-transform: translate(-7.5%);
-            transform: translate(-7.5%);
+    -webkit-transform: translate(-2.5%);
+            transform: translate(-2.5%);
   }
 }
 .form {
