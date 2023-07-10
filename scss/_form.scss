@@ -14,12 +14,12 @@
 
 .form {
   background-color: $white;
-  outline: 0;
   border-radius: 10px;
   display: flex;
   flex-direction: column;
   margin: 0 auto;
   max-width: 500px;
+  outline: 0;
   padding: 2rem 1.5rem;
   scroll-margin-top: 200px; /* Altura de la navbar + un extra para que el destino esté centrado en mobile */
   &.animated {
@@ -81,6 +81,9 @@
             -webkit-appearance: none;
             margin: 0;
           }
+          &:focus-visible {
+            outline: black 0.75px solid;
+          }
           @media only screen and (min-width: 768px) {
             max-width: 200px;
           }
@@ -97,17 +100,31 @@
         font-size: 0.875rem;
       }
       select {
-        border: 0;
-        &:focus {
-          outline: none;
-        }
+        border: black 0.75px solid;
         height: 2.5rem;
-        outline: #a9aaaf 1px solid;
+        &:hover {
+          border: black 0.75px solid;
+        }
+        &:focus-visible {
+          outline: black 0.75px solid;
+        }
       }
       input {
+        border: black 0.75px solid;
         font-size: 1rem;
         height: 2.5rem;
-        outline: #a9aaaf 1px solid;
+        &:hover {
+          border: black 0.75px solid;
+        }
+        &:focus-visible {
+          outline: black 0.75px solid;
+        }
+      }
+      .date-start,
+      .date-end {
+        @media only screen and (min-width: 992px) {
+          max-width: 187px;
+        }
       }
     }
     button {

@@ -51,6 +51,9 @@ const definitiveEndDate =
 
 /* Inserto el valor de currentDate en el DOM, tanto como valor mínimo como inicial, en todos los inputs de clase "date-start" */
 
+console.log(definitiveCurrentDate);
+console.log(definitiveEndDate);
+
 const allDateStart = document.querySelectorAll(".date-start");
 
 allDateStart.forEach((input) => {
@@ -71,11 +74,8 @@ allDateEnd.forEach((input) => {
 // PRODUCTORES //
 
 const productores = [
-  "recaFQbxlISvporVL",
   "rec5C8WSODQytEOOs",
-  "recP4nVega8nUaiWd",
   "recfv7KOxihcc6rgy",
-  "recxC3zppvddzuDUE",
   "recmjxqBYWsoyvnhn",
   "rec4ZaLa2TBF6q151",
   "rectDtn77DLLWDsOy",
@@ -120,7 +120,6 @@ const productores = [
   "recsOPfgdiPj4sfS7",
   "recvCNZpxlKAo6bNy",
   "recwOIVxY9itypALJ",
-  "recleDnJ5Y4kyNHxc",
   "recqXsypmpV1cpBz4",
   "rec8v1loAKyGl0Riz",
   "reczDDLhNOnEi1ViL",
@@ -143,7 +142,6 @@ const productores = [
   "recCosxup3x6YdkF1",
   "recQK6Fwur7owXj6h",
   "recAuFQYh1ee6JY09",
-  "rec4WpoiTk6xWEYdp",
   "rec1uM8opLgVtCxdx",
   "recVDedB3uXAXFnEy",
   "rec8FveSmomugAIIc",
@@ -151,7 +149,6 @@ const productores = [
   "recPUEKizmA7UcZLM",
   "rec34qvvvi8Czc2EY",
   "recnagRSIGh2URbfT",
-  "rec1JClPpoQHyLX9w",
   "recSatwzH4U6fDEY2",
   "recC8qYRVuNZROfGG",
   "recADFcKHBY1PXYbd",
@@ -160,7 +157,6 @@ const productores = [
   "rec57GmVytNvRkl96",
   "recUpu3fGd8BZiNkw",
   "recHpqbhbVKHvuk9d",
-  "recpvPywQ714IJaG2",
   "rectaDmrleB2vzS8Z",
   "recC04OASm9Odzyme",
   "recYmjGLCQK5r8OQb",
@@ -175,12 +171,9 @@ const productores = [
   "recvvfikrVdMQJ2d7",
   "recTf8CRd893FV6rq",
   "reck1zRKJvNtOYsJp",
-  "recmqUoLMA9DbN92U",
   "recVabN5zLQ3F1iOW",
-  "recczjClryqSVNsJx",
   "recb9ehEQWN93gn17",
   "recEHU1qbc1FYBdAs",
-  "recyI2A12o6zpE9aM",
   "recN7SKQqx9xg62Cp",
   "recWpThBxEj4Tqxa4",
   "recQ3Tpc86uuCBMGj",
