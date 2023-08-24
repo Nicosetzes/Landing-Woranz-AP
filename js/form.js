@@ -94,7 +94,6 @@ const productores = [
   "recpvSlSW6V69aK58",
   "recYd6bSxN179YiVx",
   "recfIYkdMErKMTkjN",
-  "recG5w2B0VqEfHxsi",
   "recav7cN62XCxDQs2",
   "recOXWkzA5oBajN1l",
   "recvPBlq7wMyCtK6F",
