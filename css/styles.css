@@ -338,30 +338,32 @@ p {
   padding: 121px 0 0 0; /* El padding top debe ser igual a la altura de la navbar */
 }
 .main .main__hero {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   background-color: #f3d52a;
-  padding: 4.5rem 1.5rem;
-}
-@media only screen and (max-width: 400px) {
-  .main .main__hero {
-    padding: 4.5rem 0.5rem;
-  }
-}
-@media only screen and (min-width: 992px) {
-  .main .main__hero {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    padding: 5.5rem 1.25rem;
-  }
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 4.5rem 0.5rem 0 0.5rem;
 }
 @media only screen and (min-width: 1200px) {
   .main .main__hero {
-    -webkit-box-pack: space-evenly;
-        -ms-flex-pack: space-evenly;
-            justify-content: space-evenly;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding: 3rem 1.25rem 0 1.25rem;
   }
 }
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 1200px) {
   .main .main__hero .hero-content {
     -webkit-box-align: start;
         -ms-flex-align: start;
@@ -373,16 +375,18 @@ p {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    -ms-flex-preferred-size: 550px;
-        flex-basis: 550px;
+    -ms-flex-preferred-size: 55%;
+        flex-basis: 55%;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    max-width: 725px;
     position: relative;
   }
 }
 .main .main__hero .hero-content > h1,
 .main .main__hero .hero-content p {
+  margin: 0 0 1.75rem 0;
   text-align: center;
 }
 .main .main__hero .hero-content h1 {
@@ -390,7 +394,6 @@ p {
   font-size: 4rem;
   font-weight: 700;
   line-height: 4rem;
-  margin: 0 0 1rem 0;
 }
 @media only screen and (max-width: 400px) {
   .main .main__hero .hero-content h1 {
@@ -398,7 +401,7 @@ p {
     width: 100%;
   }
 }
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 1200px) {
   .main .main__hero .hero-content h1 {
     text-align: left;
   }
@@ -407,7 +410,7 @@ p {
   font-size: 1.5rem;
   font-weight: 500;
   line-height: 2.125rem;
-  margin: 0 auto 1rem auto;
+  margin: 0 auto 1.75rem auto;
 }
 @media only screen and (min-width: 400px) {
   .main .main__hero .hero-content p {
@@ -419,9 +422,9 @@ p {
     width: 500px;
   }
 }
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 1200px) {
   .main .main__hero .hero-content p {
-    margin: 0 0 1rem 0;
+    margin: 0 0 1.75rem 0;
     max-width: 350px;
     text-align: left;
   }
@@ -443,7 +446,7 @@ p {
   line-height: 1.75rem;
   text-align: center;
 }
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 1200px) {
   .main .main__hero .hero-content > div p {
     max-width: 275px;
     text-align: left;
@@ -462,12 +465,61 @@ p {
     margin: 0 auto;
   }
 }
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 1200px) {
   .main .main__hero .hero-content > div img {
     position: absolute;
     left: 250px;
     top: 300px;
   }
+}
+.main .main__hero .hero-content a {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #323d4a;
+  border: 0;
+  border-radius: 2rem;
+  color: #f3d52a;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 1.25rem;
+  font-weight: 700;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  line-height: 2.5rem;
+  margin: 0 auto;
+  padding: 0.5em 2.5em;
+  text-decoration: none;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+@media only screen and (min-width: 1200px) {
+  .main .main__hero .hero-content a {
+    margin: 0 auto 0 0;
+  }
+}
+.main .main__hero .hero-content a:hover {
+  background-color: #ff8542;
+  color: #323d4a;
+}
+.main .main__hero .hero-image {
+  margin: 2rem auto 0 auto;
+  max-width: 550px;
+  width: 100%;
+}
+@media only screen and (min-width: 1200px) {
+  .main .main__hero .hero-image {
+    -ms-flex-item-align: end;
+        align-self: flex-end;
+    margin: 10rem 0 0 0;
+    max-width: 650px;
+  }
+}
+.main .main__hero .hero-image img {
+  max-width: 100%;
 }
 .main .main__first .first-content {
   background-color: #ff8542;
@@ -1277,22 +1329,34 @@ p {
             justify-content: space-evenly;
   }
 }
+@media only screen and (min-width: 1366px) {
+  .main .main__eighth .eighth-content .eighth__row {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
 .main .main__eighth .eighth-content .eighth__row .eighth__column {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   margin: 2rem 0;
 }
 @media only screen and (min-width: 992px) {
   .main .main__eighth .eighth-content .eighth__row .eighth__column {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
     position: relative;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .main .main__eighth .eighth-content .eighth__row .eighth__column .eighth-content-container:first-child {
+    margin: 0 0 1rem 0;
   }
 }
 .main .main__eighth .eighth-content .eighth__row .eighth__column .eighth-content-container:first-child p {
@@ -1323,7 +1387,7 @@ p {
     font-size: 1.5rem;
     line-height: 1.75rem;
     margin: 0.75rem auto 0 0.5rem;
-    max-width: 475px;
+    max-width: 575px;
     text-align: left;
   }
 }
@@ -1347,7 +1411,7 @@ p {
     height: 150px;
     margin: 1rem 3rem 0 auto;
     padding: 1.5rem 1.75rem;
-    width: 300px;
+    width: 350px;
   }
 }
 .main .main__eighth .eighth-content .eighth__row .eighth__column .eighth-content-container.block p {
@@ -1380,8 +1444,8 @@ p {
 @media only screen and (min-width: 992px) {
   .main .main__eighth .eighth-content .eighth__row .eighth__column .eighth-content-image {
     position: absolute;
-    bottom: -10px;
-    left: -80px;
+    top: 200px;
+    left: -25px;
   }
 }
 .main .main__eighth .eighth-content .eighth__row .eighth__column .eighth-content-image img {
@@ -1394,32 +1458,30 @@ p {
 }
 @media only screen and (min-width: 992px) {
   .main .main__eighth .eighth-content .eighth__row .eighth__column .eighth-content-image img {
-    left: 50px;
+    left: 0;
     -webkit-transform: none;
             transform: none;
     width: 250px;
   }
 }
-.main .main__eighth .eighth-content .eighth__row .eighth__column .eighth-content-form {
-  background-color: #fff;
-  border-radius: 10px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin: 0 auto;
-  width: 100%;
-}
-@media only screen and (max-width: 400px) {
-  .main .main__eighth .eighth-content .eighth__row .eighth__column .eighth-content-form {
-    width: 100%;
-  }
+.main .main__eighth .eighth-content .eighth__row .eighth__column .paragraph-last {
+  font-size: 1.75rem;
+  font-weight: 700;
+  line-height: 110%;
+  margin: 1.75rem auto 0 auto;
+  max-width: 440px;
+  text-align: center;
 }
 @media only screen and (min-width: 992px) {
-  .main .main__eighth .eighth-content .eighth__row .eighth__column .eighth-content-form {
-    max-width: 400px;
+  .main .main__eighth .eighth-content .eighth__row .eighth__column .paragraph-last {
+    margin: 1.75rem auto 0 0;
+    max-width: 575px;
+    text-align: left;
   }
 }
-.main .main__eighth .eighth-content .eighth__row .eighth__column .eighth-content-form img {
+.main .main__eighth .eighth-content .eighth__row .eighth__column .helmet {
+  margin: 0 auto;
+  max-width: 400px;
   width: 100%;
 }
 .main .main__eighth .eighth-content.end {
